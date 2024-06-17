@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"math"
-	"strconv"
-	"strings"
+	"fmt"     // จัดรูปแบบและแสดงผลข้อความ
+	"math"    // ฟังก์ชันทางคณิตศาสตร์
+	"strconv" //แปลงประเภทข้อมูล
+	"strings" // ฟังก์ชันสำหรับการจัดการ string เช่น การค้นหา การแทนที่ การแยก string
 )
 
 type Company struct {
@@ -199,10 +199,12 @@ func num6() {
 		Name:    "Khao Man Kai",
 		Address: "KFC 5Star Mc",
 		Phone:   "1112 1111 2222",
+		Email:   "KFCWINGZAB@KFC.5Star.com",
 	}
 	fmt.Println("Company Name:", company.Name)
 	fmt.Println("Company Address:", company.Address)
 	fmt.Println("Company Phone:", company.Phone)
+	fmt.Println("Company Email:", company.Email)
 
 }
 
