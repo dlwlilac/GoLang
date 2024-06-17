@@ -7,6 +7,13 @@ import (
 	"strings"
 )
 
+type Company struct {
+	Name    string
+	Address string
+	Phone   string
+	Email   string
+}
+
 func power(base, exponent float64) float64 {
 	return math.Pow(base, exponent)
 }
@@ -20,7 +27,10 @@ func main() {
 	// num3()
 	// num31()
 	// num4()
-	num41()
+	// num41()
+	// num5()
+	num6()
+	// spacial()
 }
 
 func num0() {
@@ -155,11 +165,62 @@ func cutText(input string) string {
 	return strings.ReplaceAll(input, " ", "")
 }
 
+func num5() {
+	peoples := map[string]map[string]string{
+		"data_01": {
+			"FirstName": "William",
+			"LastName":  "YaHhhh",
+		},
+		"data_02": {
+			"FirstName": "The",
+			"LastName":  "Flood",
+		},
+		"data_03": {
+			"FirstName": "Shin",
+			"LastName":  "Godzilla",
+		},
+		"data_04": {
+			"FirstName": "Yasuo",
+			"LastName":  "Yone",
+		},
+	}
+	for key, value := range peoples {
+		fmt.Printf("%s:\n", key)
+		for field, data := range value {
+			fmt.Printf("  %s: %s\n", field, data)
+		}
+		fmt.Println()
+	}
+
+}
+
+func num6() {
+	company := Company{
+		Name:    "Khao Man Kai",
+		Address: "KFC 5Star Mc",
+		Phone:   "1112 1111 2222",
+	}
+	fmt.Println("Company Name:", company.Name)
+	fmt.Println("Company Address:", company.Address)
+	fmt.Println("Company Phone:", company.Phone)
+
+}
+
 func spacial() {
-	fmt.Println("*")
-	fmt.Println("**")
-	fmt.Println("***")
-	fmt.Println("****")
-	fmt.Println("*****")
-	fmt.Println("******")
+	// fmt.Println("*")
+	// fmt.Println("**")
+	// fmt.Println("***")
+	// fmt.Println("****")
+	// fmt.Println("*****")
+	// fmt.Println("******")
+
+	x := 6
+
+	for i := 1; i <= x; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+
 }
