@@ -21,7 +21,7 @@ func power(base, exponent float64) float64 {
 func main() {
 
 	// num0()
-	// num1()
+	num1()
 	// num12()
 	// num2()
 	// num3()
@@ -29,7 +29,7 @@ func main() {
 	// num4()
 	// num41()
 	// num5()
-	num6()
+	// num6()
 	// spacial()
 }
 
@@ -73,7 +73,7 @@ func num12() {
 func num2() {
 	x := []int{48, 96, 86, 68, 57, 82, 63, 70, 37, 34, 83, 27, 19, 97, 9, 17}
 
-	minValue, maxValue := findMinMax(x)
+	minValue, maxValue := findMinMax(x) // เรียกใช้ FindMinMax
 
 	fmt.Printf("Minimum number is: %d\n", minValue)
 	fmt.Printf("Maximum number is: %d\n", maxValue)
