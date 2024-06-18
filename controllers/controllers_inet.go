@@ -26,7 +26,7 @@ func Factorial(c *fiber.Ctx) error {
 	for i := 2; i <= number; i++ { // i = 2 เพราะ fact 0,1 คือ 1
 		fact *= i // เอาเลขทุกตัวที่ได้มา * กัน
 	}
-	return c.SendString(fmt.Sprintf("%d! = %d", number, fact))
+	return c.SendString(fmt.Sprintf("%d! = %d", number, fact)) // แสดงผลตามรูปแบบ String ที่วางไว้
 
 }
 
