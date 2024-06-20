@@ -40,7 +40,7 @@ type ColorCounts struct {
 	NoColor int `json:"NoColor"`
 }
 
-type Company struct {
+type Company struct { //7.0.1
 	gorm.Model
 	Name    string `json:"name"`
 	Address string `json:"address"`

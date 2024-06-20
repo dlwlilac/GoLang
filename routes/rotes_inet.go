@@ -29,14 +29,14 @@ func InetRoutes(app *fiber.App) {
 	dog := v1.Group("/dog")
 	dog.Get("", call.GetDogs)
 	dog.Get("/filter", call.GetDog)
-	dog.Get("/json", call.GetDogsJson)
+	dog.Get("/json", call.GetDogsJson) // 7.2
 	dog.Post("/", call.AddDog)
 	dog.Put("/:id", call.UpdateDog)
 	dog.Delete("/:id", call.RemoveDog)
-	dog.Get("/del", call.GetDogsDel)
-	dog.Get("/scope", call.Getscope)
+	dog.Get("/del", call.GetDogsDel) // 7.0.2
+	dog.Get("/scope", call.Getscope) // 7.1
 
-	// * company
+	// * company 7.0.2
 	company := v1.Group("/company")
 	company.Get("", call.Getcompanys)
 	company.Post("/", call.Addcompany)
